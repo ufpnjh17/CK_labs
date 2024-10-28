@@ -1,3 +1,5 @@
+import math
+
 salary = 5000
 spend = 6000
 months = 10
@@ -12,6 +14,6 @@ for month in range(months):
         required_capital += deficit
     current_spend *= (1 + increase)
 
-required_capital = round(required_capital)
+required_capital = math.ceil(required_capital)
 
 print(f"Подушка безопасности, чтобы протянуть {months} месяцев без долгов:", required_capital)
